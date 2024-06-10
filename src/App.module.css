@@ -1,0 +1,13 @@
+.mainBackground {
+  height: 100vh;
+  background-image: url("./images/animation-logo.gif");
+  background-size: cover;
+}
+
+.mainShadow {
+  height: calc(100vh - 110px);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

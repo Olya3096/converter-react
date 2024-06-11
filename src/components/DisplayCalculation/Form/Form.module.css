@@ -6,21 +6,32 @@
 
 .box {
   display: flex;
-  gap: 80px;
-  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .currencyBoxes {
   display: flex;
+  padding: 0 5px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .inputAmount {
   width: 150px;
   height: 35px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   border: 2px solid rgb(63, 108, 255);
+}
+
+.inputAmount::-webkit-outer-spin-button,
+.inputAmount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .selectCurrency {
@@ -32,25 +43,24 @@
   background-color: rgb(63, 108, 255);
 }
 
-.result {
-  width: 150px;
-  height: 35px;
-  padding: 5px;
-  border: 2px solid rgb(63, 108, 255);
+.loader {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../images/loading.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.equalSign {
   font-size: 20px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .defaultCurrency {
-  width: 70px;
-  height: 35px;
+  padding: 0 5px;
   font-size: 20px;
   font-weight: bold;
   color: rgb(63, 108, 255);
-  border-top: 2px solid rgb(63, 108, 255);
-  border-bottom: 2px solid rgb(63, 108, 255);
-  border-right: 2px solid rgb(63, 108, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,14 +89,9 @@
     outline: none;
     box-shadow: 0 0 20px rgb(63, 108, 255, 0.8);
   }
-}
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.btnConvert:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px rgb(61, 157, 70, 0.8);
+  .btnConvert:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgb(61, 157, 70, 0.8);
+  }
 }

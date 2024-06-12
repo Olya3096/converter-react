@@ -48,6 +48,7 @@ const Form = () => {
             min="0.01"
             step="0.01"
             placeholder="Enter amount"
+            required
           />
           <select
             name="currency"
